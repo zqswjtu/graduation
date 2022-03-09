@@ -1,0 +1,782 @@
+WARNING __init__.py:505 Setting up a new session...
+INFO __init__.py:590 Visdom successfully connected to server
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1458 Exception on /api/v1.0/upload [POST]
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Own\Graduation\GraduationProject\back\classification\api_1_0\users.py", line 60, in upload
+    label_map, cnn_model = train()
+  File "D:\Own\Graduation\GraduationProject\back\classification\train_scratch.py", line 78, in train
+    from product import Product
+ModuleNotFoundError: No module named 'product'
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:11:09] "[35m[1mPOST /api/v1.0/upload HTTP/1.1[0m" 500 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1458 Exception on /api/v1.0/upload [POST]
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Own\Graduation\GraduationProject\back\classification\api_1_0\users.py", line 60, in upload
+    res = predict(img)
+  File "D:\Own\Graduation\GraduationProject\back\classification\train_scratch.py", line 29, in predict
+    from resnet import resnet18
+ModuleNotFoundError: No module named 'resnet'
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:24:41] "[35m[1mPOST /api/v1.0/upload HTTP/1.1[0m" 500 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1458 Exception on /api/v1.0/upload [POST]
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Own\Graduation\GraduationProject\back\classification\api_1_0\users.py", line 60, in upload
+    res = predict(img)
+  File "D:\Own\Graduation\GraduationProject\back\classification\train_scratch.py", line 180, in predict
+    model.load_state_dict(torch.load("best.mdl"))
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\torch\serialization.py", line 594, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\torch\serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\torch\serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'best.mdl'
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:25:54] "[35m[1mPOST /api/v1.0/upload HTTP/1.1[0m" 500 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1458 Exception on /api/v1.0/upload [POST]
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Own\Graduation\GraduationProject\back\classification\api_1_0\users.py", line 60, in upload
+    res = predict(img)
+  File "D:\Own\Graduation\GraduationProject\back\classification\train_scratch.py", line 180, in predict
+    model.load_state_dict(torch.load("./best.mdl"))
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\torch\serialization.py", line 594, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\torch\serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\torch\serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: './best.mdl'
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:26:31] "[35m[1mPOST /api/v1.0/upload HTTP/1.1[0m" 500 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1458 Exception on /api/v1.0/upload [POST]
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Own\Graduation\GraduationProject\back\classification\api_1_0\users.py", line 62, in upload
+    return jsonify(code=RET.OK, message="检测结果为：" + res, obj=file_obj.filename)
+TypeError: can only concatenate str (not "list") to str
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:27:23] "[35m[1mPOST /api/v1.0/upload HTTP/1.1[0m" 500 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:29:00] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:29:00] "GET /api/v1.0/getPic/T1uBd5BmVv1RCvBVdK_800.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:29:21] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:29:21] "GET /api/v1.0/getPic/00001.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:29:29] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:29:29] "GET /api/v1.0/getPic/00009.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:29:49] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:29:49] "GET /api/v1.0/getPic/00007.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:29:58] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:30:20] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:30:39] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:30:39] "GET /api/v1.0/getPic/R-C.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:31:27] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:31:27] "GET /api/v1.0/getPic/9391660454_549182925.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:31:37] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:31:37] "GET /api/v1.0/getPic/952_G_1474962971846.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:32:23] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:32:23] "GET /api/v1.0/getPic/11325510386_780901980.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:32:32] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:32:32] "GET /api/v1.0/getPic/58fd4795Nf5bd810b.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:33:48] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:33:49] "GET /api/v1.0/getPic/TB2Du8RognH8KJjSspcXXb3QFXa_!!725677994.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:34:15] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:34:15] "GET /api/v1.0/getPic/105_06444893982662438_1280.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:35:19] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:35:19] "GET /api/v1.0/getPic/poxjvfsw1681490926589030_l.jpg?time=Mon%20Mar%2007%202022%2015:35:19%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:35:23] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:35:23] "GET /api/v1.0/getPic/15120083015552jdr5wucfk_416x416.jpg?time=Mon%20Mar%2007%202022%2015:35:23%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:35:31] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:35:31] "GET /api/v1.0/getPic/1171317-04_01.jpg?time=Mon%20Mar%2007%202022%2015:35:31%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:35:36] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:35:36] "GET /api/v1.0/getPic/201305091113_3.jpg?time=Mon%20Mar%2007%202022%2015:35:36%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:37:07] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:37:07] "GET /api/v1.0/getPic/201305091113_3.jpg?time=Mon%20Mar%2007%202022%2015:37:07%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:38:21] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:38:21] "GET /api/v1.0/getPic/20941192a4eb49fd92964a20d0da13ff.jpg?time=Mon%20Mar%2007%202022%2015:38:21%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:38:38] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:38:38] "GET /api/v1.0/getPic/DYAESHJ9K9%%60CFAKW6%7BF4KY.jpg?time=Mon%20Mar%2007%202022%2015:38:38%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:39:19] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:39:19] "GET /api/v1.0/getPic/A_5___G1FK8PU2C__GVG.jpg?time=Mon%20Mar%2007%202022%2015:39:19%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:40:31] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:40:31] "GET /api/v1.0/getPic/SI6_WEZ_PX5C9CW2___Q_5Q.jpg?time=Mon%20Mar%2007%202022%2015:40:31%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:40:51] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:40:51] "GET /api/v1.0/getPic/hoXISdCxkcOlg.jpg?time=Mon%20Mar%2007%202022%2015:40:51%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:41:10] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 15:41:10] "GET /api/v1.0/getPic/201707200901414838b.jpg?time=Mon%20Mar%2007%202022%2015:41:10%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:12:51] "GET /api/v1.0/captcha/a82844e9-d3f9-42d7-a461-f94dea99eefe?time=Mon%20Mar%2007%202022%2017:12:51%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:12:59] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:13:18] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:13:18] "GET /api/v1.0/getPic/%7DVE9U)RB~Y]V8C5MPK5$ALE.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:13:30] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:13:30] "GET /api/v1.0/getPic/000000000101688568_1_800x800.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:13:45] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:13:45] "GET /api/v1.0/getPic/3@[D$M%%~Z%7B3_MR%60%7DW5G8]2.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:14:05] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:14:05] "GET /api/v1.0/getPic/1516418047224yetfconl8k.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:14:17] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 17:14:17] "GET /api/v1.0/getPic/11389961339_780901980.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:19:16] "GET /api/v1.0/captcha/5c077a71-d84a-478a-81d1-4ac1a1648814?time=Mon%20Mar%2007%202022%2020:19:16%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:19:22] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:19:41] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:19:41] "GET /api/v1.0/getPic/0373e5c0ed88494f.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:19:51] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:19:51] "GET /api/v1.0/getPic/1504594883188lrqfi74ah2_416x416.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:19:56] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:19:56] "GET /api/v1.0/getPic/1_04718860682070623_1280.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:20:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:20:03] "GET /api/v1.0/getPic/20941192a4eb49fd92964a20d0da13ff.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:20:08] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:20:08] "GET /api/v1.0/getPic/9d6d719d19604a78a0274530e1efe920_s2.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:20:18] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:20:18] "GET /api/v1.0/getPic/201305091113_3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:20:22] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:20:22] "GET /api/v1.0/getPic/20120422130649_66077.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:03] "GET /api/v1.0/getPic/00000_43.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:09] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:09] "GET /api/v1.0/getPic/00000_50.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:14] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:14] "GET /api/v1.0/getPic/00000_58.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:18] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:18] "GET /api/v1.0/getPic/00000_79.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:22] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:22] "GET /api/v1.0/getPic/00001_3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:25] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:25] "GET /api/v1.0/getPic/00000_84.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:30] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:30] "GET /api/v1.0/getPic/00001_72.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:35] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:35] "GET /api/v1.0/getPic/00003_22.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:41] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:23:41] "GET /api/v1.0/getPic/00005_64.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:26:55] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:26:55] "GET /api/v1.0/getPic/00015_13.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:26:58] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:26:58] "GET /api/v1.0/getPic/00001_4.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:27:02] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:27:02] "GET /api/v1.0/getPic/00001_15.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:33:13] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:33:13] "GET /api/v1.0/getPic/00001_54.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [07/Mar/2022 20:42:47] "[31m[1mPOST /api/v1.0/upload HTTP/1.1[0m" 400 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:07] "GET /api/v1.0/captcha/dfb6fbc3-ac04-42e7-9cae-ae87f11d4aea?time=Tue%20Mar%2008%202022%2013:47:06%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:11] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:23] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:23] "GET /api/v1.0/getPic/00001_15.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:31] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:31] "GET /api/v1.0/getPic/00003_14.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:37] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:37] "GET /api/v1.0/getPic/00000_84.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:41] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:41] "GET /api/v1.0/getPic/00002_6.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:46] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:46] "GET /api/v1.0/getPic/00002_26.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:52] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:47:52] "GET /api/v1.0/getPic/00006_38.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:00] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:00] "GET /api/v1.0/getPic/00003_37.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:11] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:11] "GET /api/v1.0/getPic/00012_78.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:20] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:20] "GET /api/v1.0/getPic/00011_35.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:26] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:26] "GET /api/v1.0/getPic/00004_20.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:30] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:30] "GET /api/v1.0/getPic/00002_1.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:35] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:35] "GET /api/v1.0/getPic/00001_3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:40] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:40] "GET /api/v1.0/getPic/00000_43.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:44] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:44] "GET /api/v1.0/getPic/00000_58.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:49] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:48:49] "GET /api/v1.0/getPic/00000_79.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:49:58] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:49:58] "GET /api/v1.0/getPic/IMG_543020201215-102555.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:50:18] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:50:18] "GET /api/v1.0/getPic/R-C.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:50:34] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:50:34] "GET /api/v1.0/getPic/1bb870ef-b102-40e3-88eb-e1aa6fe30c14-large.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:51:05] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:51:05] "GET /api/v1.0/getPic/R-C.png HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:51:35] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:51:36] "GET /api/v1.0/getPic/9c482acd4d534251a72eda5930727acf.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:52:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 13:52:03] "GET /api/v1.0/getPic/O1CN016mWnZb2LhBVcgKoH8_!!0-item_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:12:56] "GET /api/v1.0/captcha/016cf949-9eb8-47bd-94e5-8b0c09838544?time=Tue%20Mar%2008%202022%2015:12:56%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:13:06] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:13:15] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:13:15] "GET /api/v1.0/getPic/1bb870ef-b102-40e3-88eb-e1aa6fe30c14-large.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:13:42] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:13:42] "GET /api/v1.0/getPic/8.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:13:49] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:13:49] "GET /api/v1.0/getPic/14.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:03] "GET /api/v1.0/getPic/00007.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:09] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:09] "GET /api/v1.0/getPic/00011.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:13] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:13] "GET /api/v1.0/getPic/9.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:17] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:17] "GET /api/v1.0/getPic/7.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:23] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:23] "GET /api/v1.0/getPic/59.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:29] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:29] "GET /api/v1.0/getPic/5.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:33] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:33] "GET /api/v1.0/getPic/00009.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:38] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:38] "GET /api/v1.0/getPic/20.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:42] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:42] "GET /api/v1.0/getPic/00012.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:49] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:49] "GET /api/v1.0/getPic/16.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:55] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:55] "GET /api/v1.0/getPic/00002.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:59] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:14:59] "GET /api/v1.0/getPic/00000.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:03] "GET /api/v1.0/getPic/00003.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:06] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:06] "GET /api/v1.0/getPic/00005.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:12] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:12] "GET /api/v1.0/getPic/4.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:15] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:15] "GET /api/v1.0/getPic/00006.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:19] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:19] "GET /api/v1.0/getPic/00004.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:23] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:23] "GET /api/v1.0/getPic/15.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:27] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:27] "GET /api/v1.0/getPic/17.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:32] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:32] "GET /api/v1.0/getPic/10.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:36] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:36] "GET /api/v1.0/getPic/8.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:42] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:42] "GET /api/v1.0/getPic/5.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:46] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:46] "GET /api/v1.0/getPic/00007.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:50] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:59] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:15:59] "GET /api/v1.0/getPic/00011.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:04] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:04] "GET /api/v1.0/getPic/26.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:08] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:08] "GET /api/v1.0/getPic/40.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:15] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:19] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:19] "GET /api/v1.0/getPic/00007.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:23] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:23] "GET /api/v1.0/getPic/00004.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:28] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:28] "GET /api/v1.0/getPic/00005.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:33] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:33] "GET /api/v1.0/getPic/15.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:39] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:39] "GET /api/v1.0/getPic/94.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:45] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:45] "GET /api/v1.0/getPic/83.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:16:49] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:14] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:14] "GET /api/v1.0/getPic/00010.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:19] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:19] "GET /api/v1.0/getPic/15.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:25] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:25] "GET /api/v1.0/getPic/103.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:29] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:29] "GET /api/v1.0/getPic/00012.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:35] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:35] "GET /api/v1.0/getPic/82.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:39] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:39] "GET /api/v1.0/getPic/00005.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:48] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:48] "GET /api/v1.0/getPic/8.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:56] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:17:56] "GET /api/v1.0/getPic/16.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:18:04] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:18:31] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:18:31] "GET /api/v1.0/getPic/6.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:18:36] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:18:41] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:18:41] "GET /api/v1.0/getPic/00005.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:18:47] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:18:47] "GET /api/v1.0/getPic/29.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:18:54] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:18:54] "GET /api/v1.0/getPic/9.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:19:01] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:19:01] "GET /api/v1.0/getPic/50.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:19:05] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:19:05] "GET /api/v1.0/getPic/00010.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1458 Exception on /api/v1.0/upload [POST]
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Own\Graduation\GraduationProject\back\classification\api_1_0\users.py", line 58, in upload
+    file_path = os.path.join(current_app.config["UPLOAD_FOLDER"], image_name)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\ntpath.py", line 115, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\genericpath.py", line 153, in _check_arg_types
+    (funcname, s.__class__.__name__)) from None
+TypeError: join() argument must be str or bytes, not 'UUID'
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:24:10] "[35m[1mPOST /api/v1.0/upload HTTP/1.1[0m" 500 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:24:58] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:24:58] "GET /api/v1.0/getPic/17b4d1ae-dda9-3209-8b06-88efea6939e1 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:25:08] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:01] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:01] "GET /api/v1.0/getPic/471d6766-b9b2-460e-8fa8-973bd532613b HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:06] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:06] "GET /api/v1.0/getPic/7525dd0e-e7b8-4486-a0f2-c04bbff27627 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:10] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:10] "GET /api/v1.0/getPic/c89c3aff-fa51-478a-b80b-08de3a8e8ecd HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:14] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:15] "GET /api/v1.0/getPic/4ca0c1af-d14a-459d-a114-6f975055c944 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:21] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:21] "GET /api/v1.0/getPic/165956af-6ad5-4097-a131-2201c841490e HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:27] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:27] "GET /api/v1.0/getPic/6e2232fe-df27-408d-83da-90db6e07625e HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:32] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:32] "GET /api/v1.0/getPic/f8b14db7-819a-4a6e-98fa-a5c3f7357cb7 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:38] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:38] "GET /api/v1.0/getPic/c07af520-d398-4723-a5a6-93235789b6ff HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:45] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:45] "GET /api/v1.0/getPic/4e97fadd-9a99-4676-a9f3-49a1c464286d HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:52] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:52] "GET /api/v1.0/getPic/70722159-36f9-4eee-8c2a-67acb325f11a HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:57] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:26:57] "GET /api/v1.0/getPic/3577969e-27da-409f-8c2f-4038cee66998 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:03] "GET /api/v1.0/getPic/ce4d72c0-bf76-4290-86ad-668bb28f574c HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:08] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:08] "GET /api/v1.0/getPic/a895ddef-177c-4600-8e9a-f6542dd0792f HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:15] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:15] "GET /api/v1.0/getPic/de24ddf1-57de-4673-a097-1ce4f4d3db72 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:21] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:21] "GET /api/v1.0/getPic/be8f3716-c558-4af0-9643-e43bdd29bc9f HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:25] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:25] "GET /api/v1.0/getPic/d48c2da4-eabf-4eaa-b4bd-0da6c15478d4 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:31] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:31] "GET /api/v1.0/getPic/83194319-82f4-4268-976b-04381aad0d76 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:37] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:27:37] "GET /api/v1.0/getPic/a8da9476-c6dc-4f57-8481-8720a73631c7 HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:28:51] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:28:52] "GET /api/v1.0/getPic/e402bf64-aa54-4837-bda5-743cdcd66d5a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:28:57] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:28:57] "GET /api/v1.0/getPic/6eed4cf5-852c-4e56-bd3d-d1985334caef.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:29:02] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:29:02] "GET /api/v1.0/getPic/e96d7417-d92a-4e26-9d67-941bc940fb32.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:29:08] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:29:08] "GET /api/v1.0/getPic/d1c89634-2e70-48b9-93d8-e8761d910f08.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:29:12] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:29:12] "GET /api/v1.0/getPic/ffbe301c-3652-4c48-a465-3181514784d3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:29:20] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:29:20] "GET /api/v1.0/getPic/e8629586-6798-4114-82a1-bfa49c3b31a9.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:48:10] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:48:10] "GET /api/v1.0/getPic/d9e2b497-f523-4d29-8962-8e75ed038e7f.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:50:06] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:50:06] "GET /api/v1.0/getPic/ac772369-2f4e-477e-a91e-6e6ee6905a5a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:51:15] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:51:15] "GET /api/v1.0/getPic/b59b0fa3-d560-4c56-bde8-414b9cf42f7d.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:51:33] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:51:33] "GET /api/v1.0/getPic/530b41c9-4cf9-48d2-9020-743667c23a60.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:51:41] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:51:41] "GET /api/v1.0/getPic/0dce95fa-7370-4fb9-b062-1ba5b25aa1ec.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:52:31] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:52:31] "GET /api/v1.0/getPic/2c539896-a0e4-4372-a1bb-cfffa2aed1f1.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:54:35] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:54:37] "GET /api/v1.0/getPic/1ba19f38-b08b-453c-8564-dad751f461da.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:54:40] "GET /api/v1.0/getPic/1ba19f38-b08b-453c-8564-dad751f461da.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:54:59] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:54:59] "GET /api/v1.0/getPic/afcb8c8a-3b29-4750-a225-198fa806c45b.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:55:02] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [08/Mar/2022 15:55:02] "GET /api/v1.0/getPic/74393d4b-8db6-41a1-bb79-13419dccfd08.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:28:21] "GET /api/v1.0/captcha/524ea9e3-2876-4546-8eba-0064913df140?time=Wed%20Mar%2009%202022%2010:28:21%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:28:28] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:28:36] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:28:36] "GET /api/v1.0/getPic/c248ce33-adc5-49a6-ba83-b28cd53b54b5.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:28:43] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:28:43] "GET /api/v1.0/getPic/7b2322e2-8783-4101-825b-9b668bcb1d8b.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:28:51] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:28:51] "GET /api/v1.0/getPic/c5d962a3-62db-4733-a077-67fe3b7fc3ae.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:28:58] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:28:58] "GET /api/v1.0/getPic/9c1229ad-9051-4415-a7f8-fcbb6f7f1c10.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:05] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:05] "GET /api/v1.0/getPic/9daef63a-7711-44b3-a631-6d32c96e2bc1.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:09] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:09] "GET /api/v1.0/getPic/0d7b48f2-09bb-407d-ab35-5bee19f6c5a2.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:17] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:17] "GET /api/v1.0/getPic/bf4c7d48-0950-45dd-b500-dca605d58941.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:24] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:24] "GET /api/v1.0/getPic/d8d290f0-8a63-47f3-a9c9-21b68a84e625.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:27] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:27] "GET /api/v1.0/getPic/433e17e8-8e17-4119-a3c8-01665d5381ce.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:56] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:29:56] "GET /api/v1.0/getPic/8ac96417-6164-49a9-b424-c125f87b8cbb.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:30:19] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:30:19] "GET /api/v1.0/getPic/bf42348f-140a-4db6-bcc1-43f492c8001f.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:30:26] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:30:26] "GET /api/v1.0/getPic/c06023c8-c194-4b35-9a34-cbac6b94bebf.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:35:49] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:35:49] "GET /api/v1.0/getPic/4baa3728-bfcf-4ff4-9f87-e097b852e605.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:37:58] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:37:58] "GET /api/v1.0/getPic/578d58e6-b490-4737-a767-ea1346255fb7.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:03] "GET /api/v1.0/getPic/058bd22a-570d-413b-8c6a-9f41e393733c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:21] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:21] "GET /api/v1.0/getPic/1f811742-27e6-4880-881d-8ac1d503ec2a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:24] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:24] "GET /api/v1.0/getPic/0e05c6ab-e9d9-4e1b-a6f7-63db6e18fb61.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:36] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:36] "GET /api/v1.0/getPic/47ffbbd0-0e7d-4439-b5e1-8792becd79cd.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:41] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:41] "GET /api/v1.0/getPic/607ba407-5fcc-4673-a087-072ec4e71c04.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:47] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:47] "GET /api/v1.0/getPic/d5856f1e-5f8c-4cc2-95db-0f5a5d5e07b5.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:57] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:38:57] "GET /api/v1.0/getPic/e33441fd-fa32-4e89-9713-bf276a96df68.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:39:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 10:39:03] "GET /api/v1.0/getPic/6ad05d8d-4604-4f6e-af96-5bf381bc3958.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:13:58] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:13:58] "GET /api/v1.0/getPic/c9aaa489-24a0-4756-97b7-d721583b9fab.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:18] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:18] "GET /api/v1.0/getPic/c7c7b12c-baf4-44a6-a31c-58361d654509.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:28] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:28] "GET /api/v1.0/getPic/e191210d-e517-4d56-9b0b-885b3d0bb85a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:34] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:34] "GET /api/v1.0/getPic/6115ee50-d908-4829-9599-f86aee1b608a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:42] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:42] "GET /api/v1.0/getPic/6a5f147b-e62a-4e30-aedb-3cee9906320c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:45] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:45] "GET /api/v1.0/getPic/067f7933-3f0d-4a39-a048-5b27a7e305ae.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:50] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:14:51] "GET /api/v1.0/getPic/4ed58869-e5f6-4bee-8ddd-5bc0611d65fe.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:05] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:05] "GET /api/v1.0/getPic/8c84314b-a19f-43c8-b369-c86b9283ffcb.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:10] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:10] "GET /api/v1.0/getPic/cac13339-3bcb-4005-b329-f3c87a4f2253.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:20] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:20] "GET /api/v1.0/getPic/362a0c10-7f78-4093-9802-02f68bbfe344.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:30] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:30] "GET /api/v1.0/getPic/01b01948-cf68-4a35-8b3f-cf31b0476d9c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:37] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:37] "GET /api/v1.0/getPic/e4271fb0-22e6-4618-bd71-3e9d2f96a74b.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:40] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:41] "GET /api/v1.0/getPic/a461d94b-094e-411d-b038-7ef5ad8278bf.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:45] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:45] "GET /api/v1.0/getPic/eb6717d0-6a51-4691-8262-6b94cfba7901.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:50] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:50] "GET /api/v1.0/getPic/37a78f43-ec83-4dd0-90dd-243b85671eb0.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:53] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:15:53] "GET /api/v1.0/getPic/329c3165-c519-49c5-9de2-71c3c0fdbb5c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:16:02] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:16:02] "GET /api/v1.0/getPic/e9193641-60a4-4b9d-82e6-efb3bb2762e4.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:17:55] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:17:55] "GET /api/v1.0/getPic/8fba5874-d720-4ec3-8d65-b47a24c588e4.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:01] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:01] "GET /api/v1.0/getPic/f9b129bc-6b14-454f-9344-1b94e335be35.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:06] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:06] "GET /api/v1.0/getPic/721e54b4-01fe-48fa-b58a-1c96c2bf5e87.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:11] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:11] "GET /api/v1.0/getPic/a9cb407a-a96b-4c29-8ac1-cf2535baa216.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:14] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:14] "GET /api/v1.0/getPic/28da4cc0-906e-49be-8b3c-da565c113025.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:18] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:18] "GET /api/v1.0/getPic/e365094d-a973-4e14-92c7-6c2fbfb847b2.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:22] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:22] "GET /api/v1.0/getPic/2e6c691d-8b36-44bc-8bc1-34cab59ec5b3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:25] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:25] "GET /api/v1.0/getPic/75c872c3-028f-4dac-8a88-622defb0b606.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:28] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:28] "GET /api/v1.0/getPic/103845ce-e634-4ce3-ba35-74e95a048d3c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:37] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:37] "GET /api/v1.0/getPic/1d04df54-727b-4380-ae8d-0f8f9f06411f.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:41] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:41] "GET /api/v1.0/getPic/cc82b905-a49f-415b-b0f4-922b59d2a2b1.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:43] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:43] "GET /api/v1.0/getPic/bb1e10e0-949c-4054-9fc5-6f7d3ab27b29.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:46] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:46] "GET /api/v1.0/getPic/872751c3-5ee4-4641-8eda-01a988fc9429.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:58] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:18:58] "GET /api/v1.0/getPic/1fd6fb3f-a173-4b6b-bd9f-9af74e6102e8.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:07] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:07] "GET /api/v1.0/getPic/8e39de5e-6ca5-4c7c-ab32-b927154694ec.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:10] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:10] "GET /api/v1.0/getPic/15890080-fd2b-4623-9df8-d3922d2add74.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:46] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:46] "GET /api/v1.0/getPic/a2ab79fb-c274-4f55-a40a-6a6a8739f220.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:51] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:51] "GET /api/v1.0/getPic/51a96f6f-c8c4-4c71-9eba-ff6e1b9350cf.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:55] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:55] "GET /api/v1.0/getPic/4b233c61-c615-4d98-8342-c009738a8df0.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:58] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:19:58] "GET /api/v1.0/getPic/20ace400-b25b-41db-9b7a-d6fada761196.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:01] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:01] "GET /api/v1.0/getPic/46c0e387-f315-4e44-8146-a7edbaf4e7f3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:11] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:11] "GET /api/v1.0/getPic/b16c71cf-fa6f-471a-988b-7bb5ca72b14e.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:32] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:33] "GET /api/v1.0/getPic/8cf130f4-e141-456d-970e-7e2cc63d84dc.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:44] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:44] "GET /api/v1.0/getPic/71927193-5b39-4d65-8a6a-d21398192dda.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:55] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:55] "GET /api/v1.0/getPic/9303f189-d02f-4605-b191-e2ea64e8f6df.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:59] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:20:59] "GET /api/v1.0/getPic/6ea1b47b-aa92-4915-a408-03232717364f.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:21:07] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:21:07] "GET /api/v1.0/getPic/211af85f-360e-416c-b339-023375137b9f.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:21:17] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:21:17] "GET /api/v1.0/getPic/442292d3-56b2-4171-aa8a-c308452b3eac.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:21:24] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:21:24] "GET /api/v1.0/getPic/0c88a08a-813c-48ad-9af2-a039185291dc.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:21:30] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:21:30] "GET /api/v1.0/getPic/835a46ce-f7e2-44ad-80c9-006761471124.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:21:47] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:21:47] "GET /api/v1.0/getPic/5816a4b4-2e0c-4d3d-ab52-614baa0bb92a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:06] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:06] "GET /api/v1.0/getPic/61fb09a7-8577-4cda-9351-1f598401be25.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:14] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:14] "GET /api/v1.0/getPic/8121c00f-b7a6-4bcb-bc84-e6b5ef6f89cb.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:25] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:25] "GET /api/v1.0/getPic/078a13b8-86bb-4d27-ab01-ad20ad901127.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:32] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:33] "GET /api/v1.0/getPic/001a168b-600f-4f9d-9b33-a4e96b248e23.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:43] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:43] "GET /api/v1.0/getPic/af48e06c-a1c3-4df3-83a0-df9a7e972492.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:51] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:22:51] "GET /api/v1.0/getPic/8b303079-3d94-4697-b389-16d5d34c4ef1.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:23:04] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:23:04] "GET /api/v1.0/getPic/a7a503d7-71ea-4b65-9800-9b4f846d57a3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:23:19] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:23:19] "GET /api/v1.0/getPic/2c3e25fe-00c9-44d2-bc52-0627726e3999.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:23:28] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:23:28] "GET /api/v1.0/getPic/1e5aa520-a569-49bc-bcaa-b4ef801f84b9.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:23:35] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:23:35] "GET /api/v1.0/getPic/17e8f79b-27a3-4990-8bab-9beab603f666.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:23:46] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:23:47] "GET /api/v1.0/getPic/fe203b80-01a9-4bb6-8e1a-7aef04402c30.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:24:00] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:24:00] "GET /api/v1.0/getPic/a65501db-bccb-42d0-8514-43760ed34ca3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:25:13] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:25:13] "GET /api/v1.0/getPic/cea6d47f-a7a6-4e18-bc92-814c68fa47a1.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:25:38] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:25:38] "GET /api/v1.0/getPic/d8d5e060-abc3-4b88-915b-3631a857ae8f.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:25:44] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:25:44] "GET /api/v1.0/getPic/1b40c19c-85e9-46d1-840e-c19d70ca236d.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:25:55] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:25:55] "GET /api/v1.0/getPic/4abb4c7e-ca82-4aa4-bab5-4a50cf7245b4.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:26:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:26:03] "GET /api/v1.0/getPic/3e8a0df1-843f-4f74-a8ac-b561a6868893.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:26:41] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:26:41] "GET /api/v1.0/getPic/ca7fd52d-60d0-47d7-820f-d062198e18d4.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:26:48] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:26:48] "GET /api/v1.0/getPic/edc67502-abc4-4828-afac-d6e39063f08d.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:27:09] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:27:10] "GET /api/v1.0/getPic/22449bf4-b7b0-47d7-9f26-997a47923c57.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:00] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:00] "GET /api/v1.0/getPic/a4fbd34f-5342-4da6-ac59-c8a44945381e.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:15] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:15] "GET /api/v1.0/getPic/0b302abb-7642-4974-803a-5cab6e1d0fa8.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:19] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:19] "GET /api/v1.0/getPic/9db6ae70-8297-4793-9099-755ce503b748.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:23] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:23] "GET /api/v1.0/getPic/8170ca43-ed96-4e3d-9059-96d2aa6579a4.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:26] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:26] "GET /api/v1.0/getPic/ed85199a-7e28-427a-8bb3-52234885fcf4.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:33] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:33] "GET /api/v1.0/getPic/e6d6fcf2-0961-4a66-ad0d-80ca9242e28d.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:36] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:36] "GET /api/v1.0/getPic/cc05961d-e1d1-46b4-95c5-5cb1439193f2.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:47] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:47] "GET /api/v1.0/getPic/7cd6b01a-85e2-4366-9276-baf52765f376.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:55] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:28:55] "GET /api/v1.0/getPic/cd20af47-7cf0-4044-abb8-7be8d6d6cc65.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:29:02] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:29:02] "GET /api/v1.0/getPic/7fa12ec2-a41b-42e0-8462-1991d4a1d5bb.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:29:46] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:29:46] "GET /api/v1.0/getPic/d4f8b890-c4d3-4ff1-acf6-ae01895336f5.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:29:52] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:29:52] "GET /api/v1.0/getPic/3c18cd5c-6af8-46b7-8d0a-32a45f578b1e.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:29:58] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 11:29:58] "GET /api/v1.0/getPic/9960696e-30a9-416e-8c82-fae84f4f6643.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:11] "GET /api/v1.0/captcha/511f74e0-3f48-4bc1-ba91-837fab3cb643?time=Wed%20Mar%2009%202022%2015:49:11%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:19] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:32] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:32] "GET /api/v1.0/getPic/e4dcfb66-b18e-4b74-b56a-f92a751be074.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:38] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:38] "GET /api/v1.0/getPic/2be5f1e9-14a1-4d62-a236-6b7264776d45.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:42] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:42] "GET /api/v1.0/getPic/8886f01e-82f8-4446-a787-0fd38a221850.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:46] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:46] "GET /api/v1.0/getPic/9feec5e3-1adb-4bf1-b50e-f41f6a889117.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:51] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:51] "GET /api/v1.0/getPic/cf902d72-1a99-4c82-9785-f7f09d77fbdb.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:56] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:49:56] "GET /api/v1.0/getPic/e9b8ace2-f061-4d58-b55d-7e8a29b6d7c6.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:01] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:01] "GET /api/v1.0/getPic/2bb3386e-dcb2-45a6-908d-bfb436a92b01.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:09] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:09] "GET /api/v1.0/getPic/8e6b1126-324a-4783-b7a1-c1ade01e0f40.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:15] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:15] "GET /api/v1.0/getPic/337612c0-b2e8-4f1c-a2e8-c80933050099.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:21] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:21] "GET /api/v1.0/getPic/660c3d96-6b13-413d-9b95-c0ff60c3712d.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:34] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:34] "GET /api/v1.0/getPic/9fd47e1e-5303-4a5f-a7bb-cdffa6322639.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:40] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:40] "GET /api/v1.0/getPic/faa002d3-7600-4d4c-8a72-fa6abc76c281.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:43] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:44] "GET /api/v1.0/getPic/a7d36f97-49f5-4fb2-8872-ac75cfeefc37.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:47] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:47] "GET /api/v1.0/getPic/1f1133ea-0554-4be3-aa0b-732200c39d7a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:51] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:51] "GET /api/v1.0/getPic/fb29d6eb-2982-4ee1-80d0-af864c0417bf.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:55] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:55] "GET /api/v1.0/getPic/085038cf-91ab-453b-af28-3af7d89eaed3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:59] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:50:59] "GET /api/v1.0/getPic/5b26bd2f-72b0-436e-87b5-70db3f91674d.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:04] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:04] "GET /api/v1.0/getPic/b3cf4f26-8510-4b47-879b-4b3d11085f4c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:14] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:14] "GET /api/v1.0/getPic/923ba6e7-25bd-41d7-87f3-c6d3a9e7a359.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:19] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:19] "GET /api/v1.0/getPic/88cf9dce-0e0d-44c3-ac70-d1253e66cc88.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:24] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:24] "GET /api/v1.0/getPic/047239dd-9c8d-43b5-a6a2-f62daf393595.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:30] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:30] "GET /api/v1.0/getPic/0703b52b-08b2-484d-8754-b575e82880f8.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:34] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:34] "GET /api/v1.0/getPic/0ee1c505-6af3-47a5-8329-baa35f3817bf.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:37] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:37] "GET /api/v1.0/getPic/3ae2fcae-b190-40d7-a30e-7c70dfca5582.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:40] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:40] "GET /api/v1.0/getPic/a1911b01-cfcc-466d-b0fb-1d2b56c198b9.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:50] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:50] "GET /api/v1.0/getPic/ba062cfd-1308-48a7-9e16-ed2b2e2c7308.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:54] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:54] "GET /api/v1.0/getPic/4a5e7d60-901c-44c9-8ce0-66e34b406b85.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:58] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:51:58] "GET /api/v1.0/getPic/e4d2f86c-a9e6-4c07-b496-a3cb0aa3f21a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:52:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:52:03] "GET /api/v1.0/getPic/398fa16b-06a5-4e3d-af17-6f200e20364c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:52:09] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:52:09] "GET /api/v1.0/getPic/d762be05-e79e-4a75-9707-5bd5e004101c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:52:13] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:52:13] "GET /api/v1.0/getPic/7b70e930-2ba2-433f-a8ec-1ece6c525044.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:52:16] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:52:16] "GET /api/v1.0/getPic/d7885666-0b32-476b-b3b0-b69d2ed2b6ef.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:52:20] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:52:20] "GET /api/v1.0/getPic/93726799-74bc-419e-870e-8f160c3a020a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:03] "GET /api/v1.0/getPic/fefaa4b0-a258-40a0-b038-9cc57e1c4a7e.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:09] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:09] "GET /api/v1.0/getPic/3f44f74b-0e29-49e0-9bd0-ba7e6268775e.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:15] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:15] "GET /api/v1.0/getPic/eb0bd186-6c60-43ac-96d3-0c94ef31ad0c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:20] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:20] "GET /api/v1.0/getPic/ad414aee-e7c3-48df-9a9f-4fda0c9919e3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:30] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:30] "GET /api/v1.0/getPic/2fb4b50a-ba98-4e1c-a4a2-2d43984a852a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:33] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:33] "GET /api/v1.0/getPic/deee4cf9-daef-43f2-bdbb-e14f9916d8f3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:40] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:40] "GET /api/v1.0/getPic/92294dc4-444e-4075-9e73-335d2ab80bcb.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:48] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:53:48] "GET /api/v1.0/getPic/ad526113-6f02-4f08-9ff0-659e908eb26a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:00] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:00] "GET /api/v1.0/getPic/ed85498f-b59b-475a-b5ca-75c3b297be85.jpg HTTP/1.1" 200 -
+ERROR app.py:1458 Exception on /api/v1.0/camera [GET]
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\Own\Graduation\GraduationProject\back\classification\api_1_0\users.py", line 101, in take_photo
+    img, img_copy = get_image(file_path)
+ValueError: not enough values to unpack (expected 2, got 1)
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:03] "[35m[1mGET /api/v1.0/camera HTTP/1.1[0m" 500 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:38] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:38] "GET /api/v1.0/getPic/7e97dafd-bbcf-4f83-87dd-12f7f6e4acf8.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:46] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:46] "GET /api/v1.0/getPic/7f5915f2-e2b0-4b1f-9abe-ce7f9bf42c6b.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:50] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:50] "GET /api/v1.0/getPic/445d4f09-3075-4663-95a5-9e3c8b6bf2da.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:53] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:54:53] "GET /api/v1.0/getPic/c621c815-a15d-4849-8a8f-2854830909b9.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:55:56] "GET /api/v1.0/captcha/227758d9-08d2-4500-9dff-4a7c7f228ff6?time=Wed%20Mar%2009%202022%2015:55:55%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:56:00] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:56:08] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:56:08] "GET /api/v1.0/getPic/90d84175-09ef-476f-982f-9c13824a48c6.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:56:26] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:56:27] "GET /api/v1.0/getPic/13aa4402-e951-4903-b296-9e497852f2d5.jpg HTTP/1.1" 200 -
