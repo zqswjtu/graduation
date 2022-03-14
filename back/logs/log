@@ -780,3 +780,237 @@ INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:56:08] "GET /api/v1.0/camera
 INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:56:08] "GET /api/v1.0/getPic/90d84175-09ef-476f-982f-9c13824a48c6.jpg HTTP/1.1" 200 -
 INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:56:26] "GET /api/v1.0/camera HTTP/1.1" 200 -
 INFO _internal.py:225 127.0.0.1 - - [09/Mar/2022 15:56:27] "GET /api/v1.0/getPic/13aa4402-e951-4903-b296-9e497852f2d5.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR verify_code.py:17 Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR app.py:1458 Exception on /api/v1.0/captcha/2b381e9e-6692-4717-82b4-519fe9ffd3b1 [GET]
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 608, in connect
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\retry.py", line 45, in call_with_retry
+    return do()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 608, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 673, in _connect
+    raise err
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 661, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1540, in finalize_request
+    response = self.process_response(response)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1888, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask_session\sessions.py", line 169, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\commands\core.py", line 1698, in setex
+    return self.execute_command("SETEX", name, time, value)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\client.py", line 1173, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 1370, in get_connection
+    connection.connect()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 613, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+ERROR app.py:1546 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 608, in connect
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\retry.py", line 45, in call_with_retry
+    return do()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 608, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 673, in _connect
+    raise err
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 661, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1540, in finalize_request
+    response = self.process_response(response)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1888, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask_session\sessions.py", line 169, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\commands\core.py", line 1698, in setex
+    return self.execute_command("SETEX", name, time, value)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\client.py", line 1173, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 1370, in get_connection
+    connection.connect()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 613, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 608, in connect
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\retry.py", line 45, in call_with_retry
+    return do()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 608, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 673, in _connect
+    raise err
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 661, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1540, in finalize_request
+    response = self.process_response(response)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask\app.py", line 1888, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\flask_session\sessions.py", line 169, in save_session
+    time=total_seconds(app.permanent_session_lifetime))
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\commands\core.py", line 1698, in setex
+    return self.execute_command("SETEX", name, time, value)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\client.py", line 1173, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 1370, in get_connection
+    connection.connect()
+  File "D:\Own\Study\Dev\miniconda3\envs\pytorch\lib\site-packages\redis\connection.py", line 613, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:26:21] "[35m[1mGET /api/v1.0/captcha/2b381e9e-6692-4717-82b4-519fe9ffd3b1?time=Mon%20Mar%2014%202022%2014:26:15%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1[0m" 500 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:27:19] "GET /api/v1.0/captcha/9a10e64d-f237-44ef-a30f-95c176ab545f?time=Mon%20Mar%2014%202022%2014:27:19%20GMT+0800%20(China%20Standard%20Time) HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:27:26] "POST /api/v1.0/login HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:27:38] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:27:38] "GET /api/v1.0/getPic/0e21307e-13aa-4d27-aec7-00f72caeef3e.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:27:45] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:27:45] "GET /api/v1.0/getPic/a12eae57-ed7d-4f36-b154-3ef73c983aaa.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:27:57] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:27:57] "GET /api/v1.0/getPic/6ea2f2e9-97ce-4f97-accb-b18f85187e08.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:14] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:15] "GET /api/v1.0/getPic/42b94aaf-7413-41c4-b859-4167f55cd664.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:22] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:22] "GET /api/v1.0/getPic/1c54db37-7963-4886-9f26-2ed483ac45bb.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:38] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:38] "GET /api/v1.0/getPic/8fd7e25c-7f92-467c-a5c4-e38044303348.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:42] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:42] "GET /api/v1.0/getPic/4ccd4c7a-5f32-4ef1-9d4d-44b6cd62b7ef.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:45] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:45] "GET /api/v1.0/getPic/68e35ae9-83db-4d2d-b003-9ca61fca1648.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:49] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:49] "GET /api/v1.0/getPic/d09c61ac-76c7-4f07-977e-61251e428498.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:54] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:28:55] "GET /api/v1.0/getPic/d7d327e1-3d5f-4fc3-adc2-c2fd3622986c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:29:11] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:29:11] "GET /api/v1.0/getPic/da066aa5-3e03-4234-80e4-be4f2fa9cf4b.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:29:33] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:29:33] "GET /api/v1.0/getPic/8213321c-4676-4462-ab37-9e44b19d6432.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:29:41] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:29:41] "GET /api/v1.0/getPic/49507b6e-9fcc-46f5-9d01-abb576d45b62.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:29:52] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:29:52] "GET /api/v1.0/getPic/5bafac24-4bc2-4154-b532-89ada51549c5.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:30:02] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:30:03] "GET /api/v1.0/getPic/aab695fe-bd4b-447d-bd8d-53c5da2e2757.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:30:18] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:30:18] "GET /api/v1.0/getPic/7c3ca449-a552-4dbd-864e-ace524fc94b9.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:31:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:31:03] "GET /api/v1.0/getPic/301df081-9599-4d8d-8e2f-5429b8835cae.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:31:19] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:31:19] "GET /api/v1.0/getPic/4dd1d45d-990f-4a58-a33b-749b6b725e55.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:31:31] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:31:31] "GET /api/v1.0/getPic/4d2fb381-b036-4ff9-a511-11e2c29bd609.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:31:35] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:31:35] "GET /api/v1.0/getPic/3746b405-3349-46d3-aa58-8350b88aae95.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:31:44] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:31:44] "GET /api/v1.0/getPic/d7126447-27fa-4142-a615-580f13f74109.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:32:23] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:32:23] "GET /api/v1.0/getPic/d271324f-3c91-43e7-a581-231268e48060.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:32:30] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:32:30] "GET /api/v1.0/getPic/afc20e18-3177-41b9-9ee8-b9f947e0a62d.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:36:12] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:36:12] "GET /api/v1.0/getPic/2d19d42f-0dd4-4236-962b-41caf7493793.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:36:25] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:36:25] "GET /api/v1.0/getPic/ada860a1-843d-4d70-810f-c20d25e60790.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:36:33] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:36:33] "GET /api/v1.0/getPic/1e40d936-4f0f-4abc-80d2-249775f7972e.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:36:43] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:36:43] "GET /api/v1.0/getPic/730781b8-94b9-4fc9-8cd8-7b8eb6c6bbeb.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:41:13] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:41:13] "GET /api/v1.0/getPic/4e2ab057-5917-4bf8-9ee9-a1a2d20ca5e7.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:41:57] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:41:57] "GET /api/v1.0/getPic/9ad68bbe-1221-4ac0-8548-0968a6a1da35.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:42:32] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:42:34] "GET /api/v1.0/getPic/c504dab0-8708-40b0-9ff0-081475cdffe7.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:42:56] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:42:56] "GET /api/v1.0/getPic/8dd084b0-c5d9-4822-850f-f1eac8cad001.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:43:22] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:43:22] "GET /api/v1.0/getPic/8e950d3c-dbbc-4fc0-887e-2f6bc500cd28.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:44:13] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:44:13] "GET /api/v1.0/getPic/b9b13cfe-c7f3-4dd5-8a47-46079d4e520d.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:44:22] "[31m[1mPOST /api/v1.0/upload HTTP/1.1[0m" 400 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:44:48] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:44:48] "GET /api/v1.0/getPic/d3371d4b-461d-44fd-ada0-bc1a3e259f97.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:45:03] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:45:03] "GET /api/v1.0/getPic/32d19ced-f98c-4121-a545-dbd7b494424d.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:47:41] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:47:41] "GET /api/v1.0/getPic/a406a4f5-ed77-4e21-9cc4-2250de40abbd.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:47:47] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:47:47] "GET /api/v1.0/getPic/8f5f8a70-7137-4cb7-bf11-9c5f07384c5a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:47:50] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:47:50] "GET /api/v1.0/getPic/527e0c6b-d5ba-4087-9f5d-d3fba40fb07f.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:47:53] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:47:53] "GET /api/v1.0/getPic/b0b7d44f-d858-423d-9477-d45b75c855e6.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:47:59] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:47:59] "GET /api/v1.0/getPic/7c36337d-031b-417b-a3d2-646e9de25467.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:48:27] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:48:27] "GET /api/v1.0/getPic/33a7633d-aa85-4a6b-8649-292b9cc2c9fb.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:48:34] "GET /api/v1.0/camera HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 14:48:35] "GET /api/v1.0/getPic/eb8846f9-c5f9-4b62-8f78-7bc9452f8c7a.jpg HTTP/1.1" 200 -
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:12] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:12] "GET /api/v1.0/getPic/1c27d383-d165-4c1e-a07c-53419528cba6.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:21] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:21] "GET /api/v1.0/getPic/18009cad-31e4-45b9-9b92-56c6062d876e.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:28] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:28] "GET /api/v1.0/getPic/6491b421-9b93-4550-aefc-9a7b8e360ef3.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:34] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:34] "GET /api/v1.0/getPic/79d6013c-a09e-4934-8006-c3d4c6b73834.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:41] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:41] "GET /api/v1.0/getPic/a6098540-a566-4683-a51c-c81d22bfaa1c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:51] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:51] "GET /api/v1.0/getPic/a3ab6199-2d52-4196-a3de-4925f6d5002c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:57] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:07:57] "GET /api/v1.0/getPic/4a96ec47-af5b-47f7-b14d-add6d06528d0.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:06] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:06] "GET /api/v1.0/getPic/f5ab2b22-469d-426e-a947-0e12c5b56813.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:11] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:11] "GET /api/v1.0/getPic/7bf177f8-9e62-4da5-be67-e67ae82a20e4.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:15] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:15] "GET /api/v1.0/getPic/3d47dd1b-caf1-44b6-a546-0b0c8ebd7c1c.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:25] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:25] "GET /api/v1.0/getPic/25e8ec2b-bc77-459a-899a-82df6b538bda.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:30] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:30] "GET /api/v1.0/getPic/20553213-c264-44f9-8d31-a56cebe58490.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:41] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:41] "GET /api/v1.0/getPic/a80feed6-d97e-4255-94c9-f8142e3a698d.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:47] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:47] "GET /api/v1.0/getPic/175fa962-451f-4df6-a31e-c0efa2b68a94.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:54] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:08:54] "GET /api/v1.0/getPic/4366e133-d8bd-46e0-aa86-aafe77237aef.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:09:00] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:09:00] "GET /api/v1.0/getPic/f875b23c-30f6-48d5-8ea5-11284fcfbb52.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:09:04] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:09:04] "GET /api/v1.0/getPic/96161a12-6b64-4787-85c6-7b3835c34a87.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:09:08] "POST /api/v1.0/upload HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [14/Mar/2022 15:09:08] "GET /api/v1.0/getPic/7d864a45-c597-47da-b4ea-1c71327180ba.jpg HTTP/1.1" 200 -
